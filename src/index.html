@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="date-slider">
+            <div class="controllers__wrapper">
+                <button class="prevArrow button" id="prev"><span class="prevArrowIcon"></span></button>
+                <h3 class="date">Апрель 2021 г.</h3>
+                <button class="nextArrow button" id="next"><span class="nextArrowIcon"></span></button>
+            </div>
+        </div>
+        <div class="arrow">
+            <button class="arrow-down button" id="down"><span class="arrow-down__icon"></span></button>
+        </div>
+        <div class="profile">
+            <button class="profile-button button" id="profile"><span class="profile-button__icon"></span></button>
+        </div>
+    </header>
+    <main class="main">
+        <section class="employee">
+            <div class="avatar">
+                <img src="../assets/images/Frame 778.png" alt="" class="avatar__photo">
+            </div>
+            <div class="programmer">
+                <h1 class="name">
+                    Лимаренко Александр Валерьевич
+                </h1>
+                <span class="position">
+                    Программист 1С
+                </span>
+            </div>
+        </section>
+        <div class="indicators-wrapper">
+            <section class="indicators">
+                <div class="indicators__column">
+                    <span class="indicators__name">Норматив</span>
+                    <span class="indicators__value">100%</span>
+                </div>
+                <div class="indicators__column indicators__result">
+                    <span class="indicators__name">Результат</span>
+                    <span class="indicators__value result">102,5%</span>
+                </div>
+                <div class="indicators__column">
+                    <span class="indicators__name">Премия</span>
+                    <span class="indicators__value premium">77330Р</span>
+                </div>
+            </section>
+        </div>
+        <section class="menu">
+            <div class="buttons">
+                <a href="#"><button class="big-button button"><span class="button-cell"></span><span class="big-button__text">Карта целей</span></button></a>
+                <a href="#"><button class="big-button button"><span class="button-task"></span><span class="big-button__text">SMART Задачи</span></button></a>
+                <a href="#"><button class="big-button button"><span class="button-grade"></span><span class="big-button__text">Оценки</span></button></a>
+                <a href="#"><button class="big-button button"><span class="button-message"></span><span class="big-button__text">Сообщения</span></button></a>
+                <a href="#"><button class="big-button button"><span class="button-report"></span><span class="big-button__text">Отчеты</span></button></a>
+                <a href="#"><button class="big-button button"><span class="button-premium"></span><span class="big-button__text">Премия</span></button></a>
+            </div>
+        </section>
+        <section class="status">
+            <div class="status__heading">
+                <span class="status__text">Текущий статус:</span> 
+                <button class="current-status color-blue button" id="current-status">Работаю</button> 
+             </div>
+            <div class="status__indicator">
+                <span class="status-plan__indicator"></span>
+                <span class="status-fact__indicator"></span>
+            </div>
+            <div class="status__legend">
+                <div class="plan">
+                    <span class="squade color-blue__squade"></span>
+                    <span class="status-legend__text">план: 176ч.</span>
+                </div>
+                <div class="fact">
+                    <span class="squade color-yellow"></span>
+                    <span class="status-legend__text">факт: 100ч.</span>
+                </div>
+            </div>
+        </section>
+    </main>
+<script src="./script.js"></script>
+</body>
+</html>
